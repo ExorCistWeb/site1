@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">PUT9</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu lk-menu">
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Донат</a></li>
+            <li><a href="lk.html" class="lk-a">Личный Кабинет</a></li>
+            <li><a href="#" class="balanse">Баланс: <span>0 Lenin.biz</span></a></li>
+        </ul>
+    </header>
+    <div class="lk-panel">
+        <div class="lk-panel-heading">
+            <a href="#" class="lk-head-info-acc">Информация об аккаунте</a>
+            <a href="index.html" class="exit-btn" style="float: right; color: black">❌</a>
+        </div>
+        <hr class="lk-panel-hr">
+        <div class="lk-panel-body">
+            <div class="ref-s">
+                <span>Реферальная ссылка:</span>
+                <a href="http://shtirlits.net?ref=3480">http://shtirlits.net?ref=3480</a>
+            </div>
+            <hr class="lk-panel-hr">
+                <h5 class="num-ref">Количество ваших рефералов: 0</h5>
+            <hr class="lk-panel-hr">
+            <center>
+                <h5 class="withdrawal">Вывод:</h5>
+            </center>
+            <form class="conditions-form" action="#" style="display: block;">
+                <p><b style="color: red">*</b> Минимальная сумма вывода: 20 000 Lenin.biz</p>
+                <p><b style="color: red">*</b> Оплата за поиск происходит лимитом 5 минут</p>
+                <p><b style="color: red">*</b> Дневной лимит 40 запросов.</p>
+                <p><b style="color: red">*</b> Начисление от рефералов:</p>
+                <center class="levels-payment">
+                    <b>1 уровень 10 Lenin.biz за поиск</b><br>
+                    <b>2 уровень 4 Lenin.biz за поиск</b><br>
+                    <b>3 уровень 2 Lenin.biz за поиск</b><br>
+                </center>
+                <hr class="lk-panel-hr">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Сколько Lenin.biz вы хотите вывести?" value="">
+                    <input type="btc_address" class="form-control" placeholder="Адрес кошелька">
+                    <input type="submit" class="btn-conclusion" value="Вывести">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var div = document.getElementById('menu-btn');
+            if(this.checked)
+                div.style.display = 'header';
+            else
+                div.style.display = 'none'
+                }
+        document.getElementById('menu-btn').onchange = toggle;
+    </script>
+</body>
+</html>

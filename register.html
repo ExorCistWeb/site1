@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Регистрация</title>
+</head>
+<body> 
+    <header class="header">
+        <a href="index.html" class="logo">PUT9</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Форум</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="auth.html" class="in-btn-log"><i class="fa fa-user-o" aria-hidden="true"></i>Вход</a></li>
+        </ul>
+    </header>
+    <form class="reg" action="">
+        <h2>Регистрация</h2>
+        <hr>
+        <input class="a-window-log a-in" type="text" placeholder="Логин">
+        <input class="a-window-pass a-in" type="email" placeholder="Ваша почта">
+        <input class="a-window-pass a-in" type="password" placeholder="Пароль">
+        <input class="a-window-pass a-in" type="password" placeholder="повторите пароль">
+        <a class="a-forgot" href="auth.html">Уже есть аккаунт?</a>
+        <div class="error">Error</div>
+        <button class="reg-btn">Создать аккаунт</button>
+    </form>    
+</body>
+</html>

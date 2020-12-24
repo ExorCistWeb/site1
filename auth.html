@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Авторизация</title>
+</head>
+<body> 
+    <header class="header">
+        <a href="index.html" class="logo">PUT9</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Форум</a></li>
+            <li><a href="auth.html">Вход</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="register.html" class="in-btn-log"><i class="fa fa-user-o" aria-hidden="true"></i>Регистрация</a></li>
+        </ul>
+    </header>
+    <form class="auth" action="">
+        <h2>Авторизация</h2>
+        <hr>
+        <input class="a-window-log a-in" type="text" placeholder="Логин">
+        <input class="a-window-pass a-in" type="password" placeholder="Пароль">
+        <a class="a-forgot" href="#">Забыли пароль?</a>
+        <div class="error">Error</div>
+        <label class="a-checkbox"> 
+            <input type="checkbox" checked="checked" name="remember"> Запомнить
+        </label>
+        <button class="log-btn">Войти</button>
+    </form>    
+</body>
+</html>
